@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Front-end Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #d4fc79, #96e6a1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: hueRotate 10s infinite linear;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #d4fc79, #96e6a1);
+            animation: hueRotate 10s infinite linear;
+        }
+        @keyframes hueRotate {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen" onload="fadeIn()">
+    <div class="max-w-6xl mx-auto p-4">
+        <div class="flex flex-col lg:flex-row lg:space-x-6">
+            <!-- Sidebar -->
+            <div class="bg-white p-6 lg:w-1/4 shadow-md rounded-lg">
+                <div class="text-center">
+                    <img alt="Profile picture of Nitin Dhyani" class="rounded-full mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/TQqKtgZw7rcWTOfnox9BDj2RcJuByYar7qD-nYN-QYU.jpg" width="100"/>
+                    <h2 class="text-xl font-bold mt-4">Nitin Dhyani</h2>
+                    <p class="text-gray-600">Front-End Developer</p>
+                    <div class="flex justify-center mt-4 space-x-2">
+                        <a class="gradient-text" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="gradient-text" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="gradient-text" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="gradient-text" href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <div class="flex justify-between text-gray-600">
+                        <span>Age:</span>
+                        <span>24</span>
+                    </div>
+                    <div class="flex justify-between text-gray-600 mt-2">
+                        <span>Residence:</span>
+                        <span>India</span>
+                    </div>
+                    <div class="flex justify-between text-gray-600 mt-2">
+                        <span>Address:</span>
+                        <span>Chor Bazzar,Delhi</span>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-lg font-bold">Languages</h3>
+                    <div class="mt-2">
+                        <div class="flex justify-between text-gray-600">
+                            <span>English</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 h-2 rounded-full mt-1">
+                            <div class="gradient-bg h-2 rounded-full" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div class="flex justify-between text-gray-600">
+                            <span>Spanish</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 h-2 rounded-full mt-1">
+                            <div class="gradient-bg h-2 rounded-full" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-lg font-bold">Extra Skills</h3>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>Bootstrap, Materialize</li>
+                        <li>Stylus, Sass, Less</li>
+                        <li>Gulp, Webpack, Grunt</li>
+                        <li>GIT Knowledge</li>
+                    </ul>
+                </div>
+                <div class="mt-6">
+                    <a href="chatbot.html" class="w-full gradient-bg text-white py-2 rounded-full text-center block">CHAT WITH ALUMNI</a>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="flex-1 p-6 bg-white shadow-md rounded-lg mt-6 lg:mt-0">
+                <div class="mt-6">
+                    <h3 class="text-2xl font-bold text-center">Skills</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <i class="fas fa-code text-4xl gradient-text"></i>
+                            <h4 class="text-xl font-bold mt-4">Web Development</h4>
+                            <p class="text-gray-600 mt-2">Blog, E-Commerce</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <i class="fas fa-paint-brush text-4xl gradient-text"></i>
+                            <h4 class="text-xl font-bold mt-4">UI/UX Design</h4>
+                            <p class="text-gray-600 mt-2">Mobile App, Website Design</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <i class="fas fa-microphone text-4xl gradient-text"></i>
+                            <h4 class="text-xl font-bold mt-4">Sound Design</h4>
+                            <p class="text-gray-600 mt-2">Voice Over, Beat Making</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <i class="fas fa-gamepad text-4xl gradient-text"></i>
+                            <h4 class="text-xl font-bold mt-4">Game Design</h4>
+                            <p class="text-gray-600 mt-2">Character Design, Props & Objects</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <i class="fas fa-camera text-4xl gradient-text"></i>
+                            <h4 class="text-xl font-bold mt-4">Photography</h4>
+                            <p class="text-gray-600 mt-2">Portrait, Product Photography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center mt-6">
+                    <div class="lg:w-1/2">
+                        <h1 class="text-3xl font-bold">I'm Nitin Dhyani</h1>
+                        <h2 class="text-2xl font-bold gradient-text">Front-end Developer</h2>
+                        <p class="text-gray-600 mt-4">
+                            I am passionate front-end developer with over 5 years of experience in creating dynamic and responsive websites. I specialize in HTML, CSS, JavaScript, and various front-end frameworks. I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you'll find me exploring the latest web development trends and technologies.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 mt-6 lg:mt-0">
+                        <img alt="Nitin Dhyani standing with arms crossed" height="300" src="https://storage.googleapis.com/a1aa/image/1m7uUqnRgWT_SMa3MajFuqaJBk1Ci-e2rBcDSqxXtc0.jpg" width="300"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mentors Section -->
+        <div class="bg-white p-6 rounded-lg shadow-lg mt-6">
+            <h3 class="text-2xl font-bold text-center">Our Top Mentors</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                    <img alt="Mr. Pappu Singh" class="w-full h-40 object-cover rounded-t-lg transition-all" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/53d68362-65d7-455c-8e28-481530bce3d8.jpeg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Dr. Narendra Singh Gaira</h3>
+                        <p>English Speaking with conversation british</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-green-500"><i class="fas fa-star"></i></span>
+                            <span class="ml-2">4.5K Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                    <img alt="Dr. Narendra Singh Gaira" class="w-full h-40 object-cover rounded-t-lg transition-all" src="https://www.shutterstock.com/image-photo/handsome-young-africanamerican-man-on-260nw-1480634063.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Dr. Prabhakar Das</h3>
+                        <p>Introduction to Quantum Physics</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-green-500"><i class="fas fa-star"></i></span>
+                            <span class="ml-2">2.1K Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                    <img alt="Dr. Prabhakar Das" class="w-full h-40 object-cover rounded-t-lg transition-all" src="https://www.shutterstock.com/image-photo/closeup-headshot-face-portrait-beautiful-260nw-2491646077.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Dr.Sweta Arora</h3>
+                        <p>Basics of Graphic Design</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-green-500"><i class="fas fa-star"></i></span>
+                            <span class="ml-2">3.2K Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fadeIn() {
+            document.body.style.opacity = 1;
+        }
+    </script>
+</body>
+</html>

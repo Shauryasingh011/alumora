@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Future Leaders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .leader:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-black bg-opacity-75 text-white">
+    <div class="text-center py-8">
+        <h1 class="text-3xl font-bold">Meet Our Future Leaders</h1>
+        <p class="text-lg">Connect with exceptional students across disciplines</p>
+    </div>
+    <div class="flex justify-center items-center space-x-4">
+        <button class="bg-purple-600 text-white py-2 px-4 rounded-full" onclick="moveBackward()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg leader">
+                <div class="flex items-center mb-4">
+                    <img alt="Profile picture of Amaresh Nath" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/Wz2z7xFSXbFf_nq846ZAt7iZAgpAKeD-sW4hbV5klsw.jpg" width="100"/>
+                    <div>
+                        <p class="text-sm text-gray-600">Stanford University '25</p>
+                        <p class="font-bold">Amaresh Nath</p>
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            4.9 Mentor Rating
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Machine Learning</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Python</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Big Data</span>
+                </div>
+                <p class="font-bold">Current Project</p>
+                <p class="mb-4">AI-powered diagnostic tool for early cancer detection</p>
+                <p class="font-bold">Career Goal</p>
+                <p class="mb-4">Leading AI research in healthcare technology</p>
+                <button class="bg-purple-600 text-white py-2 px-4 rounded-full">Connect Now</button>
+            </div>
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg leader">
+                <div class="flex items-center mb-4">
+                    <img alt="Profile picture of Esha Patel" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/oQotRM5mV2Uz8WqRaZlJ9OOxbxj8aRWPVeo2Ygodygw.jpg" width="100"/>
+                    <div>
+                        <p class="text-sm text-gray-600">MIT '24</p>
+                        <p class="font-bold">Esha Patel</p>
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            4.8 Mentor Rating
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Sustainability</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">GIS Mapping</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Data Analysis</span>
+                </div>
+                <p class="font-bold">Current Project</p>
+                <p class="mb-4">Urban green space optimization models</p>
+                <p class="font-bold">Career Goal</p>
+                <p class="mb-4">Sustainable city planning consultant</p>
+                <button class="bg-purple-600 text-white py-2 px-4 rounded-full">Connect Now</button>
+            </div>
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg leader">
+                <div class="flex items-center mb-4">
+                    <img alt="Profile picture of Raj Patel" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/p3eDhR2W5G68hwLCGbCjsInIt8zrE5hD-HOXJQzhqDg.jpg" width="100"/>
+                    <div>
+                        <p class="text-sm text-gray-600">ETH Zurich '23</p>
+                        <p class="font-bold">Raj Patel</p>
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            4.7 Mentor Rating
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Robotics</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">3D Printing</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Sustainable Design</span>
+                </div>
+                <p class="font-bold">Current Project</p>
+                <p class="mb-4">Low-cost prosthetic limb development</p>
+                <p class="font-bold">Career Goal</p>
+                <p class="mb-4">Medical device innovation lead</p>
+                <button class="bg-purple-600 text-white py-2 px-4 rounded-full">Connect Now</button>
+            </div>
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg leader hidden">
+                <div class="flex items-center mb-4">
+                    <img alt="Profile picture of John Doe" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/6DnBOEqb85MKBGeCE1sMoJGQy8nM8rriOjry16qIBOk.jpg" width="100"/>
+                    <div>
+                        <p class="text-sm text-gray-600">Harvard University '26</p>
+                        <p class="font-bold">John Doe</p>
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            4.6 Mentor Rating
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Biotechnology</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Genetics</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Bioinformatics</span>
+                </div>
+                <p class="font-bold">Current Project</p>
+                <p class="mb-4">Genetic modification for disease resistance</p>
+                <p class="font-bold">Career Goal</p>
+                <p class="mb-4">Leading research in genetic engineering</p>
+                <button class="bg-purple-600 text-white py-2 px-4 rounded-full">Connect Now</button>
+            </div>
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg leader hidden">
+                <div class="flex items-center mb-4">
+                    <img alt="Profile picture of Jane Smith" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/2IM5mkYq-NzxTDbfxVzM808ePacP3roqCgkC4Lj7DVU.jpg" width="100"/>
+                    <div>
+                        <p class="text-sm text-gray-600">Caltech '25</p>
+                        <p class="font-bold">Jane Smith</p>
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            4.9 Mentor Rating
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Astrophysics</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Quantum Mechanics</span>
+                    <span class="bg-purple-600 text-white py-1 px-2 rounded-full text-xs">Space Exploration</span>
+                </div>
+                <p class="font-bold">Current Project</p>
+                <p class="mb-4">Quantum computing for space exploration</p>
+                <p class="font-bold">Career Goal</p>
+                <p class="mb-4">Leading research in astrophysics</p>
+                <button class="bg-purple-600 text-white py-2 px-4 rounded-full">Connect Now</button>
+            </div>
+        </div>
+        <button class="bg-purple-600 text-white py-2 px-4 rounded-full" onclick="moveForward()">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 px-4">
+        <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+            <h2 class="font-bold text-xl mb-4">Trending News</h2>
+            <div class="flex items-start mb-4">
+                <img alt="News image about AI breakthrough in healthcare" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/8K2RUrRrx_bME4WL-9HP13aJ0idrZ2OZIysOnWAvF3s.jpg" width="100"/>
+                <div>
+                    <p class="font-bold">AI Breakthrough in Healthcare</p>
+                    <p>Researchers have developed a new AI model that significantly improves early cancer detection.</p>
+                </div>
+            </div>
+            <div class="flex items-start mb-4">
+                <img alt="News image about sustainable urban planning" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/dnsf5Osx6Y28Y5auWxPe24Xx2ME2YejoxtIUTL33WJk.jpg" width="100"/>
+                <div>
+                    <p class="font-bold">Sustainable Urban Planning</p>
+                    <p>New models for optimizing urban green spaces are being implemented in major cities.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <img alt="News image about advancements in prosthetics" class="w-12 h-12 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/VJFekPMuYZTu28N4fBUBc3CEEB9_Xt3XYWfNUsFPvOo.jpg" width="100"/>
+                <div>
+                    <p class="font-bold">Advancements in Prosthetics</p>
+                    <p>Innovative low-cost prosthetic limbs are now available, improving accessibility for many.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+            <h2 class="font-bold text-xl mb-4">Jobs Available</h2>
+            <div class="flex items-start mb-4">
+                <img alt="Google logo" class="w-12 h-12 rounded-full mr-4" height="50" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width="50"/>
+                <div>
+                    <p class="font-bold">Data Scientist</p>
+                    <p>Google - Mountain View, CA</p>
+                    <p>We are looking for a Data Scientist to join our team and help us analyze large datasets to drive business decisions.</p>
+                </div>
+            </div>
+            <div class="flex items-start mb-4">
+                <img alt="Facebook logo" class="w-12 h-12 rounded-full mr-4" height="50" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="50"/>
+                <div>
+                    <p class="font-bold">Software Engineer</p>
+                    <p>Facebook - Menlo Park, CA</p>
+                    <p>We are seeking a Software Engineer to develop and maintain our web applications.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <img alt="Amazon logo" class="w-12 h-12 rounded-full mr-4" height="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" width="50"/>
+                <div>
+                    <p class="font-bold">Product Manager</p>
+                    <p>Amazon - Seattle, WA</p>
+                    <p>We are looking for a Product Manager to lead the development of our new product lines.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const leaders = document.querySelectorAll('.leader');
+
+        function updateLeaders() {
+            leaders.forEach((leader, index) => {
+                if (index >= currentIndex && index < currentIndex + 3) {
+                    leader.classList.remove('hidden');
+                } else {
+                    leader.classList.add('hidden');
+                }
+            });
+        }
+
+        function moveBackward() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateLeaders();
+            }
+        }
+
+        function moveForward() {
+            if (currentIndex < leaders.length - 3) {
+                currentIndex++;
+                updateLeaders();
+            }
+        }
+
+        updateLeaders();
+
+        window.onload = () => {
+            document.body.style.opacity = 1;
+        }
+    </script>
+</body>
+</html>

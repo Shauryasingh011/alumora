@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Alumora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-bg-gradient:hover {
+            background: linear-gradient(90deg, rgba(147,51,234,1) 0%, rgba(30,58,138,1) 100%);
+        }
+        .hover-border-color:hover {
+            border-color: rgba(147,51,234,1);
+        }
+        .hover-shadow:hover {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100" onload="fadeIn()">
+    <header class="bg-black text-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold transition-all">
+            Alumora
+        </div>
+        <nav class="space-x-4 transition-all">
+            <a class="hover:underline transition-all" href="index.html">
+                Home
+            </a>
+            <a class="hover:underline transition-all" href="courses.html">
+                Courses
+            </a>
+            <a class="hover:underline transition-all" href="HOWITWORKS.HTML">
+                How It Works
+            </a>
+            <button class="bg-white text-black px-4 py-2 rounded transition-all hover-bg-gradient">
+                <img src="https://cdn.dribbble.com/userupload/15512603/file/original-986e711c09e8d232541583ee4e481af3.png?resize=752x&vertical=center" alt="logo" class="inline-block align-middle" width="48" height="48"/>
+                <span class="sr-only">Sign In</span>
+            </button>
+        </nav>
+    </header>
+    <main class="bg-black text-white p-8">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-4 transition-all">
+                    Learn new skill every day &amp; Get guidance from top mentors and alumni
+                </h1>
+                <p class="mb-6 transition-all">
+                    We are proudly to provide you Educationpower quality education on your hand
+                </p>
+                <div class="flex space-x-2 transition-all">
+                    <input class="p-2 rounded w-full lg:w-auto text-black transition-all hover-border-color" placeholder="Insert Title or Keyword" type="text"/>
+                    <input class="p-2 rounded w-full lg:w-auto text-black transition-all hover-border-color" placeholder="Categories" type="text"/>
+                    <button class="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-2 rounded transition-all hover-bg-gradient">
+                        Search Now
+                    </button>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+                <img alt="Illustration of a person with a laptop" class="w-full max-w-sm transition-all hover-shadow" height="400" src="https://storage.googleapis.com/a1aa/image/8h_PMzf2xpnRuvDybGdnwlltm6Sj6uSl4qNR2dhrrvs.jpg" width="400"/>
+            </div>
+        </div>
+    </main>
+    <section class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 transition-all">
+                Our most popular Mentors
+            </h2>
+            <p class="mb-8 transition-all">
+                The sky was cloudless and of a deep dark blue the spectacle before us was indeed.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="1stteach.html" class="fade-link">
+                    <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                        <img alt="Course image" class="w-full h-40 object-cover rounded-t-lg transition-all" height="200" src="https://storage.googleapis.com/a1aa/image/TQqKtgZw7rcWTOfnox9BDj2RcJuByYar7qD-nYN-QYU.jpg" width="300"/>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold">
+                                Mr. Nitin Dhyani
+                            </h3>
+                            <p>
+                                English Speaking with conversation british
+                            </p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-green-500">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="ml-2">
+                                    4.5K Reviews
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="1stteach.html" class="fade-link">
+                    <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                        <img alt="Course image" class="w-full h-40 object-cover rounded-t-lg transition-all" height="200" src="https://www.shutterstock.com/image-photo/closeup-headshot-face-portrait-beautiful-260nw-2491646077.jpg" width="300"/>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold">
+                                Ms. Diva Tripathi
+                            </h3>
+                            <p>
+                                Advanced Mathematics for Engineers
+                            </p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-green-500">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="ml-2">
+                                    3.8K Reviews
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="1stteach.html" class="fade-link">
+                    <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                        <img alt="Course image" class="w-full h-40 object-cover rounded-t-lg transition-all" height="200" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/53d68362-65d7-455c-8e28-481530bce3d8.jpeg" width="300"/>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold">
+                                Dr. Narendra Singh Gaira
+                            </h3>
+                            <p>
+                                Introduction to Quantum Physics
+                            </p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-green-500">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="ml-2">
+                                    2.1K Reviews
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="2ndteach.html" class="fade-link">
+                    <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                        <img alt="Course image" class="w-full h-40 object-cover rounded-t-lg transition-all" height="200" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3cda0819-5414-45f5-8a5e-484b71346090.jpeg" width="300"/>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold">
+                                Prof. Mira Kapoor
+                            </h3>
+                            <p>
+                                Creative Writing and Storytelling
+                            </p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-green-500">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="ml-2">
+                                    5.0K Reviews
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="2ndteach.html" class="fade-link">
+                    <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                        <img alt="Course image" class="w-full h-40 object-cover rounded-t-lg transition-all" height="200" src="https://www.shutterstock.com/image-photo/handsome-young-africanamerican-man-on-260nw-1480634063.jpg"/>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold">
+                                Dr. Prabhakar Das
+                            </h3>
+                            <p>
+                                Basics of Graphic Design
+                            </p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-green-500">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="ml-2">
+                                    3.2K Reviews
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="2ndteach.html" class="fade-link">
+                    <div class="bg-white p-4 rounded-lg shadow transition-all hover-shadow hover-scale">
+                        <img alt="Course image" class="w-full h-40 object-cover rounded-t-lg transition-all" height="200" src="https://www.shutterstock.com/image-photo/smiling-young-businesswoman-glasses-confident-260nw-2406075237.jpg" width="300"/>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold">
+                                Dr. Sweta Arora
+                            </h3>
+                            <p>
+                                Introduction to Data Science
+                            </p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-green-500">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="ml-2">
+                                    4.7K Reviews
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button class="bg-green-500 text-white px-6 py-2 rounded mt-8 transition-all hover-bg-gradient">
+            Explore more
+            </button>
+        </div>
+    </section>
+    <script>
+        function fadeIn() {
+            document.body.style.opacity = 1;
+        }
+
+        document.querySelectorAll('.fade-link, nav a').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                let href = this.getAttribute('href');
+                document.body.style.opacity = 0;
+                setTimeout(function () {
+                    window.location.href = href;
+                }, 750); // Changed from 250ms to 750ms
+            });
+        });
+    </script>
+</body>
+</html>

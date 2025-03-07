@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Alumora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        body.fade-in {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-cream-100" onload="document.body.classList.add('fade-in')">
+    <header class="bg-gradient-to-r from-purple-700 to-blue-700 text-white text-center py-8">
+        <h1 class="text-3xl font-bold">Alumora</h1>
+        <p class="mt-2">Connecting Students with Industry Alumni</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-12">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-cream-200 p-6 rounded shadow">
+                <i class="fas fa-search text-2xl mb-4"></i>
+                <h2 class="text-xl font-semibold mb-2">Smart Matching</h2>
+                <p>AI-powered connections based on skills, interests, and academic background</p>
+            </div>
+            <div class="bg-cream-200 p-6 rounded shadow">
+                <i class="fas fa-comments text-2xl mb-4"></i>
+                <h2 class="text-xl font-semibold mb-2">Live Mentorship</h2>
+                <p>1-on-1 video calls, messaging, and resume reviews with verified alumni</p>
+            </div>
+            <div class="bg-cream-200 p-6 rounded shadow">
+                <i class="fas fa-briefcase text-2xl mb-4"></i>
+                <h2 class="text-xl font-semibold mb-2">Career Opportunities</h2>
+                <p>Exclusive job postings, internship alerts, and shadowing programs</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-cream-200 p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">1. Create Profile</h3>
+                    <p>Students: Share your academic interests and career goals</p>
+                    <p>Alumni: Verify your credentials and set availability</p>
+                </div>
+                <div class="bg-cream-200 p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">2. Connect</h3>
+                    <p>Search filters: Industry skills, location, and career interests</p>
+                    <p>Request mentorship or browse resources</p>
+                </div>
+                <div class="bg-cream-200 p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">3. Grow Together</h3>
+                    <p>Attend virtual events</p>
+                    <p>Track mentorship progress</p>
+                    <p>Share resources</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 text-center">
+            <blockquote class="bg-cream-200 p-6 rounded shadow italic">
+                "Alumora helped me connect with 3 amazing mentors in my field. Landed my first internship within 2 months!" - Computer Science Student
+            </blockquote>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-purple-700 to-blue-700 text-white text-center py-4">
+        <p>&copy; 2023 Alumora. Partnered with 50+ Universities Worldwide.</p>
+    </footer>
+</body>
+</html>

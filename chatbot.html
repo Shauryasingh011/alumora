@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Chat Interface</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    .gradient-bg {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-2xl mx-auto mt-10 bg-white rounded-lg shadow-lg">
+    <div class="flex items-center p-4 border-b">
+      <button onclick="history.back()" class="gradient-text">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <img alt="Profile picture of Alen Johnson" class="w-10 h-10 rounded-full ml-3" src="https://storage.googleapis.com/a1aa/image/Y_5hz7PjrFGxDLceF0pMkjMa2p1pK9unv41zwRTSKK8.jpg"/>
+      <div class="ml-3">
+        <div class="font-bold">Alumni</div>
+      </div>
+    </div>
+    <div class="p-4 space-y-4 h-96 overflow-y-auto" id="chatContainer">
+      <div class="flex justify-end">
+        <div class="mr-3">
+          <div class="gradient-bg text-white p-3 rounded-lg">
+            Hello user,<br/>
+            you will be notified when your request will be accepted.
+          </div>
+          <div class="text-xs text-gray-500 mt-1 text-right">8:00 PM</div>
+        </div>
+        <img alt="Profile picture of Alen Johnson" class="w-8 h-8 rounded-full" src="https://storage.googleapis.com/a1aa/image/Y_5hz7PjrFGxDLceF0pMkjMa2p1pK9unv41zwRTSKK8.jpg"/>
+      </div>
+    </div>
+    <div class="p-4 border-t flex items-center">
+      <div class="flex-shrink-0">
+        <div class="w-8 h-8 gradient-bg text-white rounded-full flex items-center justify-center">ST</div>
+      </div>
+      <div class="flex-grow mx-3">
+        <input class="w-full border border-gray-300 rounded-lg p-2" id="messageInput" placeholder="Enter a message" type="text" onkeydown="handleKeyDown(event)"/>
+      </div>
+      <button class="gradient-bg text-white p-3 rounded-full" onclick="sendMessage()">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const messageInput = document.getElementById('messageInput');
+      const chatContainer = document.getElementById('chatContainer');
+
+      if (messageInput.value.trim() !== "") {
+        // Add user message to chat
+        const userMessageDiv = document.createElement('div');
+        userMessageDiv.className = 'flex justify-start';
+        userMessageDiv.innerHTML = `
+          <img alt="Your profile picture" class="w-8 h-8 rounded-full mr-3" src="https://storage.googleapis.com/a1aa/image/Y_5hz7PjrFGxDLceF0pMkjMa2p1pK9unv41zwRTSKK8.jpg"/>
+          <div>
+            <div class="bg-gray-200 p-3 rounded-lg">${messageInput.value}</div>
+            <div class="text-xs text-gray-500 mt-1">Now</div>
+          </div>
+        `;
+        chatContainer.appendChild(userMessageDiv);
+
+        // Clear the input
+        messageInput.value = "";
+
+        // Add response message to chat
+        const responseMessageDiv = document.createElement('div');
+        responseMessageDiv.className = 'flex justify-end mt-4';
+        responseMessageDiv.innerHTML = `
+          <div class="mr-3">
+            <div class="gradient-bg text-white p-3 rounded-lg">
+              Hello user,<br/>
+              you will be notified when your request will be accepted.
+            </div>
+            <div class="text-xs text-gray-500 mt-1 text-right">Now</div>
+          </div>
+          <img alt="Profile picture of Alen Johnson" class="w-8 h-8 rounded-full" src="https://storage.googleapis.com/a1aa/image/Y_5hz7PjrFGxDLceF0pMkjMa2p1pK9unv41zwRTSKK8.jpg"/>
+        `;
+        chatContainer.appendChild(responseMessageDiv);
+
+        // Scroll to the bottom
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }
+    }
+
+    function handleKeyDown(event) {
+      if (event.key === 'Enter') {
+        sendMessage();
+      }
+    }
+  </script>
+</body>
+</html>
