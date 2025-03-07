@@ -18,6 +18,13 @@
     .gradient-purple-blue {
       background: linear-gradient(to right, #6a11cb, #2575fc);
     }
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    body.fade-in {
+      opacity: 1;
+    }
   </style>
  </head>
  <body class="bg-gray-100" onload="fadeIn()">
@@ -133,4 +140,30 @@
     </div>
     <!-- Card 6 -->
     <div class="bg-white shadow-md rounded-lg overflow-hidden">
-     <img alt="AI and Machine Learning" class="w-full h
+     <img alt="AI and Machine Learning" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/jV-qrFwHmadeVIOUhq_BiDn3dhpkvBBoK0OWYLFmPnU.jpg" width="600"/>
+     <div class="p-4">
+      <h3 class="text-lg font-semibold">
+       AI and Machine Learning
+      </h3>
+      <p class="text-gray-600">
+       Dive into the world of AI and machine learning with hands-on projects.
+      </p>
+      <div class="flex justify-between items-center mt-4">
+       <button class="gradient-purple-blue text-white px-4 py-2 rounded">
+        View Details
+       </button>
+       <span class="text-gray-500">
+        4.9
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+    function fadeIn() {
+      document.body.classList.add('fade-in');
+    }
+  </script>
+ </body>
+</html>
